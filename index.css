@@ -1,0 +1,51 @@
+/*******************************/
+/*GENERAL*/
+/*******************************/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: "Epilogue", sans-serif;
+}
+.heading-primary {
+  font-size: 80px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+/*******************************/
+/*HER0 SECTION*/
+/*******************************/
+
+.hero-section {
+  padding: 70px 0 96px 0;
+}
+.hero-img {
+  width: 100%;
+}
+.hero {
+  max-width: 1440px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  padding: 0 32px;
+  gap: 150px;
+}
+.hero-description {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 16px 32px;
+  background-color: hsl(0, 0%, 8%);
+  border-radius: 12px;
+  color: #fff;
+}
