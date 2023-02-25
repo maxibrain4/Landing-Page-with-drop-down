@@ -31,14 +31,17 @@ html {
 }
 .main-nav-list {
   list-style: none;
-  display: flex;
-  align-items: center;
-  gap: 32px;
+  padding: 0;
+  margin: 0;
   font-family: "Epilogue", sans-serif;
 }
-.main-nav-link:link,
-.main-nav-link:visited {
-  display: inline-block;
+.main-nav-link {
+  float: left;
+  padding: 10px 0;
+}
+.main-nav-link > a:link,
+.main-nav-link > a:visited {
+  display: inline;
   text-decoration: none;
   font-size: 18px;
   font-weight: 400;
@@ -55,6 +58,32 @@ html {
   display: flex;
   align-items: center;
   gap: 40px;
+}
+/* .header > .nav-list > .main-nav-list > .sub-menu {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.07);
+} */
+.header > .nav-list > .main-nav-list {
+  position: relative;
+}
+.sub-menu {
+  display: block;
+  list-style: none;
+  padding: 12px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.07);
+  width: 220px;
+  position: absolute;
+  left: -100px;
+  top: 100%;
+  background-color: #fff;
+  transition: all 0.3s ease;
+  transform: translateY(10px);
+  opacity: 0;
+  visibility: hidden;
+}
+.header > .nav-list > .main-nav-list > .main-nav-link:hover > .sub-menu {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
 }
 /*******************************/
 /*HER0 SECTION*/
