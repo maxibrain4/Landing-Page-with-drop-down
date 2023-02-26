@@ -1,0 +1,19 @@
+@media (max-width: 1180px) {
+  .hero-description {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    color: hsl(0, 0%, 41%);
+  }
+  .heading-primary {
+    font-size: 65px;
+    font-weight: 700;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 1041px) {
+  .header .nav-list {
+    visibility: hidden;
+  }
+}
