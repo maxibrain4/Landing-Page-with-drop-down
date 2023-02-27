@@ -21,16 +21,14 @@
     ></script>
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="query.css" />
+    <script defer src="index.js"></script>
   </head>
   <body>
     <header class="header">
-      <div class="first-box">
-      <span class="mainlogo">
-        </span><a href="#">
-          <img src="/images/logo.svg" class="logo" alt="" />
-        </a>
-        </span>
-      <nav class="nav-list first-box">
+      <a href="#">
+        <img src="/images/logo.svg" class="logo" alt="" />
+      </a>
+      <nav class="nav-list">
         <ul class="main-nav-list">
           <li class="main-nav-link">
             <a href="#"
@@ -38,8 +36,13 @@
               <ion-icon
                 class="ArrowUpclick"
                 name="chevron-down-outline"
-              ></ion-icon
-            ></a>
+              ></ion-icon>
+              <ion-icon
+                class="Arrowdownclick"
+                id="Arrowdownclicky"
+                name="chevron-down-outline"
+              ></ion-icon>
+            </a>
             <ul class="sub-menu">
               <li class="main-nav-link">
                 <span class="svgbody"
@@ -120,10 +123,7 @@
           <li class="main-nav-link"><a href="#"> Career</a></li>
           <li class="main-nav-link"><a href="#">About</a></li>
         </ul>
-      </nav>
-      </div>  
-      <nav class="nav-list">
-        <ul class="main-nav-list">
+        <ul class="main-nav-list down">
           <li class="main-nav-link"><a href="#">Login</a></li>
           <li class="main-nav-link">
             <a href="#" class="round-curves">Register</a>
@@ -137,24 +137,23 @@
     </header>
     <section class="hero-section">
       <div class="hero">
-          <div class="hero-text-box">
+        <div class="hero-text-box">
           <h1 class="heading-primary">
             Make <br />
             remote work
           </h1>
           <p class="hero-description">
-            Get your team in sync, no matter your location.
-            Streamline processes, create team rituals, and
-            watch productivity soar.
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
           </p>
           <a href="#" class="btn">Learn more</a>
-          </div>
-          <div class="logos">
-            <img src="/images/client-databiz.svg" alt="" />
-            <img src="/images/client-audiophile.svg" alt="" />
-            <img src="/images/client-meet.svg" alt="" />
-            <img src="/images/client-maker.svg" alt="" />
-          </div>
+        </div>
+        <div class="logos">
+          <img src="/images/client-databiz.svg" alt="" />
+          <img src="/images/client-audiophile.svg" alt="" />
+          <img src="/images/client-meet.svg" alt="" />
+          <img src="/images/client-maker.svg" alt="" />
+        </div>
         <div class="hero-img-box">
           <img src="/images/image-hero-desktop.png" class="hero-img" alt="" />
         </div>

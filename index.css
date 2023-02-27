@@ -19,21 +19,18 @@ html {
 /*HEADER*/
 /*******************************/
 .header {
-  height: 96px;
+  height: 100px;
   padding: 0 34px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 40px;
 }
 
-.logo {
+.nav-list {
+  width: 100%;
   display: flex;
-  align-items: center;
-  height: 30px;
+  justify-content: space-between;
 }
-/* .mainlogo {
-  margin-left: -20px;
-} */
 .main-nav-list {
   list-style: none;
   padding: 0;
@@ -41,7 +38,7 @@ html {
   font-family: "Epilogue", sans-serif;
 }
 .main-nav-link {
-  float: left;
+  display: inline-block;
   padding: 10px 0;
 }
 .main-nav-link > a:link,
@@ -59,15 +56,8 @@ html {
   padding: 15px 32px;
   border-radius: 12px;
 }
-.first-box {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-}
-/* .header > .nav-list > .main-nav-list > .sub-menu {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.07);
-} */
-.header > .first-box > .nav-list > .main-nav-list {
+
+.header > .nav-list > .main-nav-list {
   position: relative;
 }
 .sub-menu {
@@ -86,24 +76,16 @@ html {
   visibility: hidden;
   border-radius: 9px;
 }
-.header
-  > .first-box
-  > .nav-list
-  > .main-nav-list
-  > .main-nav-link:hover
-  > .sub-menu {
+.header > .nav-list > .main-nav-list > .main-nav-link:hover > .sub-menu {
   transform: translateY(0);
   opacity: 1;
   visibility: visible;
 }
+.Arrowdownclick {
+  display: none;
+}
 
-.header
-  > .first-box
-  > .nav-list
-  > .main-nav-list
-  > .main-nav-link
-  > a
-  .ArrowUpclick {
+.header > .nav-list > .main-nav-list > .main-nav-link > a .ArrowUpclick {
   display: inline-block;
   height: 15px;
   width: 15px;
@@ -128,24 +110,13 @@ html {
   visibility: hidden;
   border-radius: 9px;
 }
-.header
-  > .first-box
-  > .nav-list
-  > .main-nav-list
-  > .main-nav-link:hover
-  > .sub-menu2 {
+.header > .nav-list > .main-nav-list > .main-nav-link:hover > .sub-menu2 {
   transform: translateY(0);
   opacity: 1;
   visibility: visible;
 }
 
-.header
-  > .first-box
-  > .nav-list
-  > .main-nav-list
-  > .main-nav-link
-  > a
-  .ArrowUpclick {
+.header > .nav-list > .main-nav-list > .main-nav-link > a .ArrowUpclick {
   display: inline-block;
   height: 15px;
   width: 15px;
@@ -157,10 +128,14 @@ html {
   display: none;
 }
 .icon-mobile-nav {
-  height: 4.8rem;
-  width: 4.8rem;
+  height: 48px;
+  width: 48px;
   color: #333;
 }
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
 /*******************************/
 /*HER0 SECTION*/
 /*******************************/
